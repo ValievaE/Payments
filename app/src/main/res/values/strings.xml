@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Payments</string>
+    <string name="hint_inputmoney">Ввод денег</string>
+    <string name="hint_infopay">Информация об оплате</string>
+    <string name="text_button_ok">OK</string>
+    <string name="text_cb_card">С банковской карты</string>
+    <string name="text_cb_mobile">С мобильного телефона</string>
+    <string name="text_cb_cash">Наличными по адресу</string>
+</resources>
