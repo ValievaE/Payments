@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox mBankCardChkBx;
     private CheckBox mMobilePhoneChkBx;
     private CheckBox mCashAddressChkBx;
-    private String edTxInputMoney = mInputMoney.getText().toString();
-    private String edTxInputInfo = mInputInfo.getText().toString();
+    private String edTxInputMoney;
+    private String edTxInputInfo;
 
 
     @Override
@@ -29,9 +29,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
 
+
         mBtnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                edTxInputMoney = mInputMoney.getText().toString();
+                edTxInputInfo = mInputInfo.getText().toString();
                 if (mBankCardChkBx.isChecked())
                 Toast.makeText(MainActivity.this, "Оплата картой " + edTxInputMoney + " " + edTxInputInfo, Toast.LENGTH_LONG).show();
                 else if (mMobilePhoneChkBx.isChecked())
